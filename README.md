@@ -27,7 +27,7 @@ BiocManager::install(c("DESeq2", "clusterProfiler", "enrichplot", "org.Hs.eg.db"
 
 ### 2. **Synthetic Control Generation**
 - Generate three synthetic control samples using negative binomial distribution, with mean and dispersion estimated from the two real controls using DESeq2.
-- Example R function for synthetic control generation:
+- R function for synthetic control generation:
   ```{r}
     simulate_synthetic_control <- function(control_counts, dispersions, sample_name) {
     synthetic_control <- numeric(nrow(control_counts))
